@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Creating Blog Page - detail</title>
+    <link rel="stylesheet" href="/public/css/blog.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-side">
+        <a href="/">
+          <img src="/public/images/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/blog" class="list-active">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="/contact"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <div class="blog-detail">
+      <div class="blog-detail-container">
+        <h1>{{.Title}}</h1>
+        <div class="author">31 november 2022 22:30 WIB | jordan cool</div>
+        <img src="/public/images/13.jpg" alt="detail" />
+        <p>
+          {{.Content}}
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

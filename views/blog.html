@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="public/css/blog.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="/">
+          <img src="public/images/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/blog" class="list-active">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="/contact"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Title</label>
+              <input id="input-blog-title" />
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Attach File</p>
+                  <img src="public/image/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="public/images/13.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+            <h1>
+              <a href="/blog-detail/123" target="_blank"
+                >Jasa Motong Rumput</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              31 november 2022 00:30 WIB | jordan cool
+            </div>
+            <p>
+              "Selama beberapa dekade hingga sekarang, Timur Tengah telah menderita diskriminasi, dan saya telah mendapati bahwa diskriminasi itu, sebagian besar didasarkan pada orang yang tidak mengenal kami, dan dalam beberapa situasi, menolak untuk mengenal kami. Ia juga mengklaim bahwa sejumlah individu telah "meluncurkan serangan, dengan kecepatan yang belum pernah terlihat sebelumnya, ketika sebuah acara olahraga besar diselenggarakan oleh negara-negara lain di benua yang berbeda" dan bahwa ia "bangga dengan perkembangan, reformasi, dan kemajuan" yang telah dicapai Qatar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/blog.js"></script>
+  </body>
+</html>
